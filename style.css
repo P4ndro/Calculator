@@ -1,0 +1,115 @@
+body {
+    background: #18191a;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background: #23272f;
+    padding: 32px 28px 24px 28px;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+    min-width: 320px;
+    max-width: 360px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#display {
+    width: 100%;
+    height: 64px;
+    font-size: 18px;
+    border: none;
+    border-radius: 18px;
+    background: #18191a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    margin-bottom: 16px;
+    padding: 0 10px;
+    text-align: right;
+    color: #fafafa;
+}
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+button {
+    height: 56px;
+    font-size: 22px;
+    background: #23272f;
+    color: #fafafa;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #31343b;
+    color: #4CAF50;
+    transform: scale(1.08);
+}
+
+button:active {
+    background: #4CAF50;
+    color: #fff;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+    background: #23272f;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+button:nth-child(14) {
+    background: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+}
+
+button:nth-child(15) { 
+    background: #f44336;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        padding: 16px 8px;
+        min-width: unset;
+        max-width: 100vw;
+    }
+    #buttons {
+        gap: 8px;
+    }
+    button {
+        font-size: 16px;
+        height: 40px;
+    }
+    #display {
+        font-size: 18px;
+        height: 40px;
+        padding: 0 8px;
+    }
+}
