@@ -1,6 +1,7 @@
 # Calculator Project
 
-![Calculator Screenshot](ScreenClip/{7261B20A-FB67-4BF3-B0F4-95B597923B8F}.png)
+![Calculator Screenshot](<img width="652" height="747" alt="{96E0A7A6-BB95-4DD7-95D5-B1F2D4A121D3}" src="https://github.com/user-attachments/assets/b2c20167-c4c4-4104-8ba2-eff04ce7d536" />
+)
 
 A simple, modern calculator web application built with HTML, CSS, and JavaScript.
 
